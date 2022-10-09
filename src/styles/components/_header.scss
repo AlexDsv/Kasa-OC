@@ -1,0 +1,36 @@
+.logo{
+    width: 210px;
+    height: 68px;
+}
+
+.navigation{
+    align-items: center;
+li{
+    color: $color-1;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    margin: 17px 0px 17px 57px;
+    :visited, :active, :link, :hover{
+    text-decoration: none;
+    }
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+}
+
+
+.header{
+    margin-top: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
