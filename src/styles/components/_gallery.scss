@@ -1,0 +1,31 @@
+.gallery{
+    background-color: $color-2;
+    max-width: 100%;
+    margin-top: 56px;
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 25px;
+    flex-wrap: wrap;
+}
+
+.card{
+    min-width: 340px;
+    max-width: 340px;
+    min-height: 340px;
+    max-height: 340px;
+    margin: 25px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%), $color-1;
+    border-radius: 10px;
+    h3{
+    padding-top: 268px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    font-style: normal;
+    }
+}

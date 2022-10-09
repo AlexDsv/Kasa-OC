@@ -1,0 +1,19 @@
+.footer{
+    margin-left: -100px;
+    margin-right: -100px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    background: black;
+    height: 209px;
+    text-align: center;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    p{
+        font-weight: 500;
+        font-size: 24px;
+        margin-top: 35px;
+        line-height: 142.6%;
+    }
+}

@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 const Error_404 = () => {
@@ -6,6 +7,7 @@ const Error_404 = () => {
     <div>
       <Header />
       <p>404</p>
+      <Footer />
     </div>
   );
 };

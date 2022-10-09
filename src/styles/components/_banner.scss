@@ -1,3 +1,17 @@
 .banner{
-    background-image: url(../../../assets/images/bannerbackground.png);
+    display: flex;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.300), rgba(0, 0, 0, 0.300)), url(../../../assets/images/bannerbackground.png);
+    background-size: cover;
+    width: 100%;
+    height: 223px;
+    line-height: 142.6%;
+    border-radius: 25px;
+    margin-top: 63px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 48px;
+    color: white;
 }
+
