@@ -1,11 +1,23 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect } from "react";
+import { NavLink } from "react-router-dom";
+import { data } from "../data";
 
 const Gallery = () => {
   return (
     <div className="gallery">
-      <div className="card">
-        <h3>Titre de location</h3>
-      </div>
+      {data.map((data, key) => {
+        return (
+          <div className="card" key={key}>
+            <NavLink to={"/logement"}>
+              <img src={data.cover} />
+              <div className="card_description">
+                <h3>{data.title}</h3>
+              </div>
+            </NavLink>
+          </div>
+        );
+      })}
     </div>
   );
 };
