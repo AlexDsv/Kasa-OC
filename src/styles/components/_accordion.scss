@@ -40,3 +40,14 @@
         transition: all 400ms;
     }
 }
+
+.accordions{
+    display: flex;
+    justify-content: space-between;
+    gap: 75px;
+    .accordion{
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}

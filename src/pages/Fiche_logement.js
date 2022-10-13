@@ -10,8 +10,11 @@ const Fiche_logement = () => {
     <div>
       <Header />
       <Carousel />
-      <Accordion name="Descritpion" />
-      <Accordion name="Équipements" />
+      <div className="accordions">
+        <Accordion name="Descritpion">{location.description}</Accordion>
+        <Accordion name="Équipements"></Accordion>
+      </div>
+
       <Footer />
     </div>
   );

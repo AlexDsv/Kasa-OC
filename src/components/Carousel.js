@@ -37,12 +37,15 @@ const Carousel = () => {
   console.log(location.pictures[currImg]);
   return (
     <div className="carousel">
+      {/* Insertion de la première image du logement en background dans le carousel */}
       <div
         className="innerCarousel"
         style={{ backgroundImage: `url(${location.pictures[currImg]})` }}
       >
+        {/* Fleche Left pour revenir en arrière dans les images du carousel */}
         <div
           className="left"
+          // Condition pour aller à la dernière image si on clique sur Left en étant sur la première image
           onClick={() => {
             currImg > 0
               ? setCurrImg(currImg - 1)
@@ -58,6 +61,7 @@ const Carousel = () => {
         </div>
         <div
           className="right"
+          // Condition pour aller à la première image si on clique sur Right en étant sur la dernière image
           onClick={() => {
             currImg < location.pictures.length - 1
               ? setCurrImg(currImg + 1)
