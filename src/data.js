@@ -579,3 +579,9 @@ export const data = [
     tags: ["Louvre", "Marais", "Rivoli"],
   },
 ];
+
+// for (let i = 0; i < data.length; i++) {
+//   {
+//     console.log(data[i]);
+//   }
+// }

@@ -8,8 +8,8 @@ const Gallery = () => {
     <div className="gallery">
       {data.map((data, key) => {
         return (
-          <div className="card" key={key}>
-            <NavLink to={"/logement"}>
+          <div className="card" key={data.id}>
+            <NavLink to={`/logement/${data.id}`}>
               <img src={data.cover} />
               <div className="card_description">
                 <h3>{data.title}</h3>
