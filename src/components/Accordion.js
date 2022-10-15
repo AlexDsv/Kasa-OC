@@ -27,7 +27,6 @@ function Accordion(props) {
     for (let i = 0; i < data.length; i++) {
       if (data[i].id === locationId) {
         setLocation(data[i], []);
-        console.log(location.description);
       }
     }
   });

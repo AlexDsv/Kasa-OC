@@ -28,13 +28,11 @@ const Carousel = () => {
     for (let i = 0; i < data.length; i++) {
       if (data[i].id === locationId) {
         setLocation(data[i], []);
-        console.log(location);
       }
     }
   });
 
   const [currImg, setCurrImg] = useState(0);
-  console.log(location.pictures[currImg]);
   return (
     <div className="carousel">
       {/* Insertion de la première image du logement en background dans le carousel */}
