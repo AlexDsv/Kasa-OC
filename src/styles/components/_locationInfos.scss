@@ -23,7 +23,7 @@
         font-weight: 500px;
         font-size: 18px;
         line-height: 25.67px;
-        width: 9%;
+        width: auto;
         text-align: end;
         padding: 10px;
     }
@@ -65,4 +65,8 @@
     li{
     margin-left: 10px;
 }
+}
+
+.locationHostInfos{
+    display: flex;
 }

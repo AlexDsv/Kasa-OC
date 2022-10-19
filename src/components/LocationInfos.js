@@ -33,11 +33,17 @@ const LocationInfos = () => {
       <div className="locationName">
         <h2>{location.title}</h2>
       </div>
-      <div className="locationHostFirstName">{location.host.name}</div>
-      <div
-        className="locationHostPicture"
-        style={{ backgroundImage: `url(${location.host.picture})` }}
-      ></div>
+      <div className="locationHostInfos">
+        <div className="locationHostName">
+          {location.host.name.split(" ")[0]}
+          <br />
+          {location.host.name.split(" ")[1]}
+        </div>
+        <div
+          className="locationHostPicture"
+          style={{ backgroundImage: `url(${location.host.picture})` }}
+        ></div>
+      </div>
       <div className="locationLocation">
         <p>{location.location}</p>
       </div>
