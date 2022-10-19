@@ -25,9 +25,9 @@
         line-height: 25.67px;
         width: 9%;
         text-align: end;
+        padding: 10px;
     }
     .locationHostPicture{
-        margin-left: 10px;
         height: 64px;
         width: 64px;
         border-radius: 50%;
@@ -55,4 +55,14 @@
             margin-right: 10px;
         }
     }
+}
+
+.locationRating ul{
+    float: right;
+    display: flex;
+    flex-direction: row;
+    margin-top: -35px;
+    li{
+    margin-left: 10px;
+}
 }

@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import { data } from "../data";
 import LocationInfos from "../components/LocationInfos";
+import StarsRating from "../components/StarsRating";
 
 const Fiche_logement = () => {
   return (
@@ -14,6 +15,7 @@ const Fiche_logement = () => {
       <Header />
       <Carousel />
       <LocationInfos />
+      <StarsRating />
       <div className="accordions">
         <Accordion name="Descritpion">
           {data.map((data, key) => {

@@ -27,12 +27,13 @@ const LocationInfos = () => {
       }
     }
   });
+
   return (
     <div className="locationInfos">
       <div className="locationName">
         <h2>{location.title}</h2>
       </div>
-      <div className="locationHostName">{location.host.name}</div>
+      <div className="locationHostFirstName">{location.host.name}</div>
       <div
         className="locationHostPicture"
         style={{ backgroundImage: `url(${location.host.picture})` }}
@@ -51,7 +52,6 @@ const LocationInfos = () => {
           })}
         </ul>
       </div>
-      <div className="locationRating"></div>
     </div>
   );
 };
