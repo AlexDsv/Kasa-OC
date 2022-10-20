@@ -32,6 +32,8 @@ const Carousel = () => {
     }
   });
 
+  console.log(location.pictures.length);
+
   const [currImg, setCurrImg] = useState(0);
   return (
     <div className="carousel">
@@ -42,7 +44,9 @@ const Carousel = () => {
       >
         {/* Fleche Left pour revenir en arrière dans les images du carousel */}
         <div
-          className="left"
+          className={`left ${
+            location.pictures.length === 1 && "singleCarousel"
+          }`}
           // Condition pour aller à la dernière image si on clique sur Left en étant sur la première image
           onClick={() => {
             currImg > 0
@@ -52,13 +56,19 @@ const Carousel = () => {
         >
           <i className="fa-solid fa-chevron-left"></i>
         </div>
-        <div className="center">
+        <div
+          className={`center ${
+            location.pictures.length === 1 ? "singleCarousel" : ""
+          }`}
+        >
           <p>
             {currImg + 1}/{location.pictures.length}
           </p>
         </div>
         <div
-          className="right"
+          className={`right ${
+            location.pictures.length === 1 && "singleCarousel"
+          }`}
           // Condition pour aller à la première image si on clique sur Right en étant sur la dernière image
           onClick={() => {
             currImg < location.pictures.length - 1

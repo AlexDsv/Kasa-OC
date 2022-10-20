@@ -8,9 +8,14 @@ const Gallery = () => {
     <div className="gallery">
       {data.map((data, key) => {
         return (
-          <div className="card" key={data.id}>
+          <div
+            className="card"
+            style={{
+              backgroundImage: `linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%),url(${data.cover}) `,
+            }}
+            key={data.id}
+          >
             <NavLink to={`/logement/${data.id}`}>
-              <img src={data.cover} />
               <div className="card_description">
                 <h3>{data.title}</h3>
               </div>
