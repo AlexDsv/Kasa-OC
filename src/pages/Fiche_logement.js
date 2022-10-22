@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useParams } from "react-router-dom";
+import { Route, useParams } from "react-router-dom";
 import { useEffect } from "react";
 import Accordion from "../components/Accordion";
 import Carousel from "../components/Carousel";
@@ -8,8 +8,14 @@ import Header from "../components/Header";
 import { data } from "../data";
 import LocationInfos from "../components/LocationInfos";
 import StarsRating from "../components/StarsRating";
+import { Navigate } from "react-router-dom";
+import Error_404 from "../pages/Error_404";
 
 const Fiche_logement = () => {
+  <Route
+    path={window.location.href}
+    element={<Navigate to={<Error_404 />} />}
+  />;
   return (
     <div>
       <Header />
@@ -22,7 +28,7 @@ const Fiche_logement = () => {
             let locationId = useParams().id;
             const locationData = [data.description, data.id];
             if (locationId === locationData[1]) {
-              console.log(locationData[0]);
+              console.log(useParams().id, locationData[1]);
               return locationData[0];
             }
           })}

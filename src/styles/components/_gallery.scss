@@ -9,6 +9,13 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     position: relative;
+    @media screen and (max-width: 760px){
+        margin-top: 0px;
+        background: white;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 15 px;
+    }
         
 }
 
@@ -20,21 +27,47 @@
     margin: 24px;
     border-radius: 10px;
     overflow: hidden;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+@media screen and (max-width: 760px){
+    max-width: 335px;
+    max-height: 255px;
+    min-width: 335px;
+    min-height: 255px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+}
     h3{
-    padding-top: 268px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    color: white;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 142.6%;
-    font-style: normal;
+        padding-top: 268px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        color: rgb(255, 255, 255);
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 142.6%;
+        font-style: normal;
+        @media screen and (max-width: 760px){
+            padding-top: 170px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            color: rgb(255, 255, 255);
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 142.6%;
+            font-style: normal; 
+            position: absolute;
+        }
     }
     .card_description{
+        @media screen and (max-width: 760px){
         width: 80%;
+    }
     }
 }

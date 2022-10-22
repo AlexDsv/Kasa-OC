@@ -32,8 +32,6 @@ const Carousel = () => {
     }
   });
 
-  console.log(location.pictures.length);
-
   const [currImg, setCurrImg] = useState(0);
   return (
     <div className="carousel">

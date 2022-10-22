@@ -39,7 +39,6 @@ const StarsRating = () => {
     emptyStars[x] = x;
     x++;
   }
-  console.log(emptyStars);
   return (
     <div className="locationRating">
       <ul>

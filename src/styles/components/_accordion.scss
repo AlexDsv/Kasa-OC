@@ -5,6 +5,10 @@
     color: white;
     transition: all 400ms;
     cursor: pointer;
+    @media screen and (max-width: 850px){
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 
     .accordion_toggle{
         display: flex;
