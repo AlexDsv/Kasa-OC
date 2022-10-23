@@ -3,20 +3,45 @@
     color: $color-1;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media screen and (max-width: 1140px){
+            flex-direction: column;
+    }
     .locationName{
         width: 83%;
-
+        @media screen and (max-width: 1140px){
+            margin-left: 20px;
+            margin-top: 0;
+            order: 1;
+        }
     }
     .h2{
         font-weight: 500;
         font-size: 36px;
         line-height: 51.34px;
+        @media screen and (max-width: 1140px){
+            margin: 0;
+        }
+        
     }
     .locationLocation{
         font-weight: 500;
         font-size: 18px;
         line-height: 25.67px;
         margin-top: -25px;
+        @media screen and (max-width: 1140px){
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 19.96px;
+            order: 2; 
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 0;
+        }
+        p{
+            @media screen and (max-width: 1140px){
+                margin-bottom: 0;
+            }
+        }
     }   
     .locationHostName{
         flex-wrap: wrap;
@@ -26,6 +51,11 @@
         width: auto;
         text-align: end;
         padding: 10px;
+        @media screen and (max-width: 1140px){
+            font-weight: 500px;
+            font-size: 12px;
+            line-height: 17.11px;
+        }
     }
     .locationHostPicture{
         height: 64px;
@@ -35,12 +65,27 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+        @media screen and (max-width: 1140px){
+            height: 32px;
+            width: 32px;
+            align-items: center;
+        }
     }
     .locationTags{ 
         align-items: flex-start;
         width: 100%;
-        margin-top: 25px;
+        margin-top: 10px;
+        @media screen and (max-width: 1140px){
+         order: 3;   
+         margin-top: 0;
+        }
         ul{
+            @media screen and (max-width:1140px){
+             flex-wrap: wrap;   
+             margin-left: 20px;
+             margin-bottom: 0;
+             
+            }
             display: flex;
             padding: 0;
             flex-direction: row;
@@ -54,20 +99,53 @@
             border-radius: 25px;
             padding: 3px 30px 3px 30px;
             margin-right: 10px;
+            @media screen and (max-width: 1140px){
+                font-weight: 500;
+                font-size: 10px;
+                line-height: 14.26px;
+                margin-bottom: 5px;
+            }
         }
     }
 }
 
-.locationRating ul{
-    float: right;
-    display: flex;
-    flex-direction: row;
-    margin-top: -50px;
-    li{
-    margin-left: 10px;
-}
-}
+.locationRating{
+    @media screen and (max-width: 1140px){
+        display: flex;
+        align-items: end;
+    }
+    
+    ul{
+        float: right;
+        display: flex;
+        flex-direction: row;
+        margin-top: -50px;
+        @media screen and (max-width: 1140px){
+            order: 4;
+            float: left;
+            margin-left: -30px;
+        }
+        li{
+            margin-left: 10px;
+            @media screen and (max-width: 1140px){
+            font-size: 15px;
 
+            }
+            img{
+            @media screen and (max-width: 1140px){
+                width: 15px;
+                height: 15px;
+            }
+            }
+        }
+    }
+}
 .locationHostInfos{
     display: flex;
+    @media screen and (max-width: 1140px){
+     order: 5;       
+     justify-content: end;
+     margin-right: 20px;
+     align-items: center;
+    }
 }

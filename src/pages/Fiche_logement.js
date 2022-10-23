@@ -12,10 +12,6 @@ import { Navigate } from "react-router-dom";
 import Error_404 from "../pages/Error_404";
 
 const Fiche_logement = () => {
-  <Route
-    path={window.location.href}
-    element={<Navigate to={<Error_404 />} />}
-  />;
   return (
     <div>
       <Header />

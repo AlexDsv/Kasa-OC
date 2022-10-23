@@ -5,7 +5,7 @@
     color: white;
     transition: all 400ms;
     cursor: pointer;
-    @media screen and (max-width: 850px){
+    @media screen and (max-width: 1150px){
         margin-left: 20px;
         margin-right: 20px;
     }
@@ -23,6 +23,11 @@
         position: relative;
         z-index: 1;
         transition: all 400ms;
+        @media screen and (max-width: 800px){
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 18.54px;
+    }
     }
     .accordion_content{
         color: $color-1;
@@ -32,6 +37,11 @@
         line-height: 34.22px;
         border-radius: 5px;
         transition: all 400ms;
+        @media screen and (max-width: 800px){
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 17.11px;
+    }
     }
     .accordion_content_show{
         padding: 25px;
@@ -43,6 +53,17 @@
         line-height: 34.22px;
         margin-top: -10px;
         transition: all 400ms;
+        @media screen and (max-width: 800px){
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 17.11px;
+            padding: 15px;
+        }
+        ul{
+            @media screen and (max-width: 800px){
+                padding-left: 0;
+        }
+        }
     }
 }
 
@@ -50,9 +71,19 @@
     display: flex;
     justify-content: space-between;
     gap: 75px;
+    @media screen and (max-width: 800px){
+        gap: 0;
+        width: auto;
+        flex-wrap: wrap;
+    }
     .accordion{
         width: 100%;
         margin-left: 0px;
         margin-right: 0px;
+        @media screen and (max-width: 800px){
+            margin-left: 20px;
+            margin-right: 20px;
+
+        }
     }
 }
