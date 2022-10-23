@@ -13,7 +13,7 @@
     font-weight: 500;
     font-size: 48px;
     color: white;
-    @media screen and (max-width: 760px){
+    @media screen and (max-width: 1025px){
         height: 111px;
         font-weight: 500;
         font-size: 24px;
@@ -30,7 +30,7 @@
     
     }
     p{
-        @media screen and (max-width: 760px){
+        @media screen and (max-width: 1025px){
         width: 65%;
         margin-left: 16px;
         }
@@ -45,7 +45,7 @@
     height: 223px;
     border-radius: 25px;
     margin-top: 63px;
-    @media screen and (max-width: 800px){
+    @media screen and (max-width: 1025px){
         margin-left: 20px;
         margin-right: 20px;
         width: auto;
