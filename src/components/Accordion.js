@@ -5,7 +5,7 @@ import { data } from "../data";
 
 function Accordion(props) {
   // Récuperation des données correspondant au logement cliqué par le client
-  // Création d'un etat avec un objet reprenanat le même modèle que les données stockés dans notre json
+  // Création d'un etat avec un objet reprenanat le même modèle que les données stockées dans notre json
   const [location, setLocation] = useState({
     id: "",
     title: "",
@@ -22,7 +22,7 @@ function Accordion(props) {
   // Recuperation de l'ID du logement sur lequel le client est grâce à l'id présent dans l'URL
   let locationId = useParams().id;
 
-  // Boucle pour récupérer les données correspondant au logement voulu et setLocation pour attribuer à Location les données
+  // Boucle pour récupérer les données correspondant au logement voulu et setLocation pour attribuer à Location les données/modfiier l'état
   useEffect(() => {
     for (let i = 0; i < data.length; i++) {
       if (data[i].id === locationId) {

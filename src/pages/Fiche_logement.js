@@ -17,7 +17,6 @@ const Fiche_logement = () => {
   for (let i = 0; i < data.length; i++) {
     idsArray.push(data[i].id);
   }
-  console.log(idsArray.includes(locationId));
   if (!idsArray.includes(locationId)) {
     return <Navigate to="/404" />;
   } else {
